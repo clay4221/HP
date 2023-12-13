@@ -14,3 +14,8 @@ window.addEventListener("click", () => {
 });
 
 
+document.querySelector(".confetti-button").addEventListener("click", (e) => {
+  confetti();
+  e.target.style.transform = "scale(1.5)";
+  setTimeout(() => (e.target.style.transform = "scale(1)"), 100);
+});
